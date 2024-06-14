@@ -104,38 +104,11 @@ figure figcaption h3 {
 }
 
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   /* justify-content: center;
   align-items: center; */
   flex: 1;
-}
-
-section {
-  flex: 1; 
-  background-color: #555;
-}
-
-section div:nth-child(even) {
-  background-color: #888;
-}
-
-section div:nth-child(odd) {
-  background-color: #aaa;
-}
-
-section.right-section {
-  flex: 2;
-  background-color: #444;
-}
-
-section.right-section .section-header {
-  font-weight: 300;
-}
-
-.section-header {
-  color: var(--primary-color);
-  font-size: 30px;
-  text-align: center;
 }
 
 footer {
@@ -180,6 +153,10 @@ footer {
 
   figcaption p {
     font-size: 2rem;
+  }
+
+  main {
+    padding: 0 15%;
   }
 }
 
