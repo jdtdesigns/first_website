@@ -24,6 +24,10 @@ a {
   color: #222;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* CUSTOM STYLES */
 header {
   display: flex;
@@ -75,6 +79,28 @@ header nav a:hover:after, header nav a.active:after {
 
 header nav a.active {
   background-color: #ddd;
+}
+
+figure {
+  display: flex;
+}
+
+figure img {
+  width: 45%;
+}
+
+figure figcaption {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+figure figcaption h3 {
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 main {
@@ -140,6 +166,20 @@ footer {
 
   footer p {
     margin: 4px 0;
+  }
+}
+
+@media (min-width: 900px) {
+  figure {
+    padding: 0 15%;
+  }
+
+  figcaption {
+    font-size: 2.5rem;
+  }
+
+  figcaption p {
+    font-size: 2rem;
   }
 }
 
